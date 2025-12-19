@@ -1,0 +1,128 @@
+/* ===============================
+   Skip to Main Content link
+   =============================== */
+.skip-link {
+    position: absolute;
+    top: 10px;
+    left: -999px;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 12px;
+    text-decoration: none;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    left: 10px;
+}
+
+/* ===============================
+   General page styling
+   =============================== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #582e2e;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+/* ===============================
+   Headings
+   =============================== */
+h1 {
+    text-align: center;
+    margin-bottom: 10px 20px;
+    color: #ffbc1e;
+    background-color: #582e2e;
+}
+
+h2 {
+    color: #355a7f;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #721a52;
+}
+
+/* ===============================
+   Lists
+   =============================== */
+ul {
+    list-style-type: square;
+    padding-left: 30px;
+}
+
+/* ===============================
+   Images – Box Model
+   =============================== */
+img {
+    display: block;
+    margin-top: 10px;
+    border: 3px solid #333;
+    padding: 6px;
+    border-radius: 12px;
+    max-width: 100%;
+}
+
+/* Hover effect on images */
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: 0.3s ease;
+}
+
+p{
+    text-align: justify;
+}
+/* ===============================
+   Grid layout for sections
+   =============================== */
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+/* ===============================
+   Flex layout for song lists
+   =============================== */
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Each list item */
+ul li {
+    flex: 1 1 500px;
+}
+
+/* ===============================
+   nth-child selector
+   =============================== */
+ul li:nth-child(even) img {
+    border-radius: 50%;
+}
+
+/* ===============================
+   Links
+   =============================== */
+a {
+    color: #0066cc;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #cc0000;
+    text-decoration: underline;
+}
